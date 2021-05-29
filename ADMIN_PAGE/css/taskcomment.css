@@ -1,0 +1,11 @@
+.task_comment{
+	overflow: hidden;
+}
+.task_data_comment{
+	float: left;
+	width: 85%;
+	overflow: hidden;
+}
+.task_button_comment{
+	float: right;
+}

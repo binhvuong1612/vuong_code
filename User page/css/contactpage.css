@@ -1,0 +1,330 @@
+
+/*BODY CSS*/
+.body{
+	overflow: hidden;
+}
+/*Content 1*/
+.content_1{
+	overflow: hidden;
+	height: 200px; 
+	width: 100%;
+	background-image: url("../image/counterbg.jpg");
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content_1 h1{
+	margin: 0px;
+}
+.content_1 h1{
+	margin-top: 70px;
+	margin-left: 100px;
+	padding: 0px;
+	font-weight: 900;
+	color: #fff;
+	
+}
+.btn_1{
+  	margin-left: 100px;
+  	padding-left:30px;
+  	padding-right:30px; 
+  	height: 30px;
+  	line-height: 30px;
+  	width: 210px;
+  	justify-content: center;
+  	background-color: #C70039;
+  	border: 0;
+  	border-radius: 4px;
+  	cursor: pointer;
+}
+.btn_1 span{
+	color: #cecece;
+	font-size: 14px;
+	font-weight: 400;
+	padding-left: 10px;
+}
+.btn_1 a{
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+}
+.btn_1 a:hover{
+	color: #cecece;
+}
+
+/*Content 2*/
+.content_2{
+	width: 86%;
+	margin-left: 7%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	overflow: hidden;
+	background-color: #fff;
+}
+.content_2_col1{
+	overflow: hidden;
+	width: 60%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 30px;
+}
+.content_2_col1 h2{
+	margin: 20px 0px;
+	color: #6f6f6f;
+	text-align: left;
+}
+.content_2_col1 p{
+	color: #6f6f6f;
+	margin-bottom: 20px;
+}
+.content_2_col1 span {
+	color: #6f6f6f;
+}
+.content_2_col1 i{
+	margin-bottom: 10px;
+	margin-right: 5px;
+	color: #C70039;
+}
+.content_2_col1 a{
+	color: blue;
+}
+.content_2_information{
+	overflow: hidden;
+}
+.content_2_information i{
+	margin: 0px;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+.content_2_information span{
+	line-height: 25px;
+}
+.content_2_status_information{
+	font-weight: 700;
+}
+.content_2_information_col_1{
+	float: left;
+	width: 50%;
+}
+.content_2_information_col_2{
+	float: left;
+	width: 50%;
+}
+.content_2_col2{
+	overflow: hidden;
+	width: 40%;
+	float: right;
+	box-sizing: border-box;
+}
+.box_content_2_col2 h2{
+	margin: 20px 0px;
+	color: #6f6f6f;
+	text-align: left;
+}
+.content_2_form_contact{
+	overflow: hidden;
+}
+.content_2_form_contact_row{
+	overflow: hidden;
+}
+.name_form,.email_form{
+	float: left;
+	overflow: hidden;
+	width: 50%;
+}
+.content_2_form_contact_row p{
+	color: #6f6f6f;
+	margin: 12px 0px;
+}
+.name_form input{
+	display: block;
+	outline: none;
+	height: 40px;
+	width: 90%;
+	color: #6f6f6f;
+	border: 2px solid #C70039;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 15px 20px;
+}
+.email_form p{
+	margin-left: 10%;
+}
+.email_form input{
+	outline: none;
+	display: block;
+	color: #6f6f6f;
+	height: 40px;
+	width: 90%;
+	border: 2px solid #C70039;
+	border-radius: 5px;
+	margin-left: 10%;
+	box-sizing: border-box;
+	padding: 5px 10px;
+}
+.status_form input{
+	outline: none;
+	display: block;
+	color: #6f6f6f;
+	height: 40px;
+	width: 100%;
+	border: 2px solid #C70039;
+	margin-right: 25px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 5px 10px;
+}
+.content_form textarea{
+	outline: none;
+	display: block;
+	color: #6f6f6f;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	height: 120px;
+	width: 100%;
+	border: 2px solid #C70039;
+	margin-right: 25px;
+	border-radius: 5px;
+}
+.btn_2{
+	transition: all .2s ease-in-out;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 32% ;
+    margin-top: 40px ;
+    height: 45px;
+    line-height: 45px;
+    width: 200px;
+    text-align: center;
+    background-color: #C70039;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.btn_2:hover{
+	background-color: #ffc107;
+}
+.btn_2 a{
+	color: #fff;
+	letter-spacing: 1.5px;
+}
+
+
+/*CONTENT 3*/
+.content_3{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 50px;
+	padding-bottom: 80px;
+	cursor: pointer;
+	background-image: url("https://hanoipetadoption.com/Images/patterns/pattern1.png");
+}
+.content_3 h1{
+	color: #6f6f6f;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.box_content_3{
+	overflow: hidden;
+}
+.content_3_col{
+	float: left;
+	overflow: hidden;
+	padding-left: 12%;
+}
+.content_3_col div{
+	height: 120px;
+	width: 120px;
+	border-radius: 120px;
+	border: 2px solid #d61c62;
+	text-align: center;
+}
+#content_3_col_1{
+	margin-left: 150px;
+}
+.content_3_col img{
+	box-sizing: border-box;
+	margin-top: 27%;
+	
+}
+.content_3_col img:hover{
+	transform: rotate(20deg);
+	transition: 0.5s;
+}
+.content_3_col h3{
+	color: #6f6f6f;
+	width: 100%;
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;	
+}
+.btn_3{
+	transition: all .2s ease-in-out;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 42% ;
+    margin-top: 40px ;
+    height: 45px;
+    line-height: 45px;
+    width: 200px;
+    text-align: center;
+    background-color: #C70039;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.btn_3:hover{
+	background-color: #ffc107;
+}
+.btn_3 a{
+	color: #fff;
+	letter-spacing: 1.5px;
+}
+
+/*Content 4*/
+.content_4{
+	height: 230px;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("https://hanoipetadoption.com/Images/nhan-nuoi-online.jpg");
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content_4_slogan{
+	float: left;
+	font-size: 27px;
+	color: #fff;
+	width: 55%;
+	padding-left: 60px;
+}
+.content_4_slogan h2{
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 10px;
+}
+.content_4_btn{
+	float: right;
+	margin-right: 150px;
+	margin-top: 70px;
+}
+.btn_4{
+	display: block;
+	transition: all .2s ease-in-out;
+    font-family: 'Roboto',sans-serif;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    width: 200px;
+    text-align: center;
+    background-color: #C70039;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.btn_4:hover{
+	background-color: #ffc107;
+}
+.btn_4 a{
+	color: #fff;
+	letter-spacing: 1.5px;
+}
+
+

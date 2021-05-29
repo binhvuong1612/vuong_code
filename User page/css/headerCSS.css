@@ -1,0 +1,149 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Roboto',sans-serif;
+}
+
+
+/*HEADER _ CSS*/
+/*Information*/
+
+.header{
+	overflow: hidden;
+}
+.header_information{
+	overflow: hidden;
+	font-family: montserrat;
+	height: 42px;
+	width: 100%;
+	background: #ffc107;
+	line-height: 42px;
+	color: #fff;
+}
+.left_header{
+	float: left;
+	margin-left: 80px;
+	overflow: hidden;
+}
+.left_header span{
+	margin-left: 6px;
+	margin-right: 20px;
+}
+.left_header a{
+	color: #fff;
+}
+.right_header{
+	float: right;
+	overflow: hidden;
+}
+.right_header i{
+	cursor: pointer;
+}
+.right_header a{
+	margin-left: 30px;
+	display: block;
+	width: 60px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	border-left: 3px double #fff;
+	color: #fff;
+	float: right;
+}
+.right_header a:hover{
+	color: #C70039;
+	transition: 0.7s;
+}
+#btn_signout{
+  	margin: 2px 2px;
+  	margin-left: 10px;
+  	padding-left:20px;
+  	padding-right:20px; 
+  	height: 30px;
+  	justify-content: center;
+  	background-color: #C70039;
+  	border: 0;
+  	border-radius: 10px;
+  	color: #fff;
+  	cursor: pointer;
+}
+
+
+/*Logo-Menu*/
+
+.header_menu{
+	background: #f4f4f4;
+    box-shadow: 0 -2px 12px rgb(0 0 0 / 7%);
+	overflow: hidden;
+	width: 100%;
+	z-index: 200;
+}
+.header_icon{
+	float: left;
+	text-align: center;
+
+}
+.header_icon i{
+	color: #C70039;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-top: 2px;
+	cursor: pointer;
+}
+.header_icon i:hover{
+	color: #007bff;
+	transition: 0.5s;
+}
+.right_menu{
+	float: right;
+	padding-left: 20px;
+	width: 75%;
+}
+.left_menu{
+	float: left;
+	width: 22%;
+	overflow: hidden;
+}
+#header_logo{
+	height: 80px;
+	width: 140px;
+	margin-left: 100px;
+}
+.header_name_brand{
+	color: #ffc107;
+	margin-left: 100px;
+	padding: 0px;
+}
+.header_name_brand h1{
+	margin: 0px;
+}
+
+.right_menu nav ul li{
+	display: inline-block;
+	box-sizing: border-box;
+	font-size: 18px;
+	height: 120px;
+	line-height: 120px;
+	margin: 0 16px;
+	letter-spacing: 2px;
+}
+.right_menu nav ul li a{
+	color: #333;
+	text-transform: uppercase;
+}
+.right_menu nav ul li i{
+	font-size: 0px;
+}
+.right_menu nav ul li:hover > i{
+	margin-right: -50px;
+	font-size: 50px;
+	z-index: -100;
+	color:rgba(255,0,0,0.3);	
+}	
+.right_menu nav ul li a:hover{
+	color: #C70039;
+	transition: 0.3s;
+}
+

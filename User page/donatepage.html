@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DONATE PAGE</title>
+	<link rel="stylesheet" href="font-awsome/all.min.css">
+	<link rel="stylesheet" href="css/resetCSS.css">
+	<link rel="stylesheet" href="css/headerCSS.css">
+	
+	<link rel="stylesheet" href="css/footerCSS.css">
+	<link rel="stylesheet" type="text/css" href="css/btnScrollBackToTop.css">
+	<script type="text/javascript" src="js/btnScrollBackToTop.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/donatepage.css">
+    <script type="text/javascript" src="js/donatepage.js"></script>
+</head>
+<body onload="donatepage()">
+	<div class="header">
+		<div class="header_information" id="header_information">
+			<div class="left_header">
+				<i class="fas fa-map-marker-alt"></i><span>Đà Nẵng - Việt Nam</span>
+				<i class="far fa-envelope"></i><span><a href="#">danangaoption.com</a></span>
+				<i class="fas fa-phone"></i><span><a href="#">(+84)70 560 5264</a></span>
+			</div>
+			<div class="right_header">
+				<span><i class="fas fa-search"></i></span>
+				<button onclick="signout()" id="btn_signout" class="btn-second">Sign Out</button>
+			</div>
+			
+		</div>
+		<div class="header_menu" id="header_menu">
+			<div class="header_icon">
+					<i class="fab fa-facebook-square"><a href="#"></a></i><br>
+					<i class="fab fa-youtube"><a href="#"></a></i><br>
+					<i class="fab fa-instagram-square"><a href="#"></a></i><br>
+			</div>
+			<div class="left_menu">
+				<div class="header_logo">
+					<img src="image/logo.png" id="header_logo" alt="">
+				</div>
+				<div class="header_name_brand">
+					<h1>ADOPTION</h1>
+				</div>
+			</div>
+			<div class="right_menu">
+				<nav>
+					<ul>
+						<li><i class="fas fa-paw"></i><a href="homepgae.html">HOME</a></li>
+						<li><i class="fas fa-paw"></i><a href="adoptpage.html">ADOPT</a></li>
+						<li><i class="fas fa-paw"></i><a href="donatepage.html">DONATE</a></li>
+						<li><i class="fas fa-paw"></i><a href="volumteerpage.html">VOLUMTEER</a></li>
+						<li><i class="fas fa-paw"></i><a href="newspage.html">NEWS</a></li>
+						<li><i class="fas fa-paw"></i><a href="blogpage.html">BLOG</a></li>
+						<li><i class="fas fa-paw"></i><a href="contactpage.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="body" id="body">
+		<div class="content_1">
+			<h1>DONATE</h1>
+			<div class="btn_1">
+				<a href="homepgae.html">Home Page  ></a><span>Donate</span>
+			</div>
+		</div>
+		<div class="content_2">
+			<div class="box_content_2">
+				<div class="content_2_col1">
+					<h1>Tôi Muốn Ủng Hộ</h1>
+			          <p>Mọi hoạt động cứu hộ của Hanoi Pet Adoption hoàn toàn dựa trên các khoản quyên góp từ cộng đồng. Chi phí trung bình hàng tháng của nhóm rơi vào khoảng 70 triệu đồng, bao gồm tiền thuê nhà, tiền viện phí, thức ăn, điện, nước, thuốc men và đồ dùng, bỉm tã, lương hỗ trợ các bạn tnv dọn dẹp... Nhóm rất cần sự giúp đỡ của các bạn để có thể duy trì nhà chung cũng như đội cứu hộ. Chỉ cần cố định 50k - 100k hàng tháng là các bạn đã giúp đỡ được cho nhóm và cách bé rất nhiều!
+			          </p>
+			          <p>Chi phí sẽ được chia đều cho các bé khác còn nằm viện và gây dựng nhà chung. Ngoài ra Nhóm cũng tiếp nhận quyên góp bằng hiện vật như quần áo cũ (để lót chuồng), bỉm, găng tay y tế, thức ăn, cát vệ sinh v.v...</p>
+			          <p>*Lưu ý: nhóm không dùng zalo và KHÔNG BAO GIỜ yêu cầu Mạnh Thường Quân cung cấp thông tin thẻ hoặc mã OTP</p>
+			          <p>
+			          	<span>Danh sách Mạnh Thường Quân quyên góp cho nhóm sẽ được cập nhật thường xuyên tại đây:</span><br>
+			          	<span>2020: http://bit.ly/2RLgOgs .</span><br>
+			            <span>2019: http://bit.ly/31cYEXs .</span><br>
+			            <span>2018: http://bit.ly/2K5hr1K .</span><br>
+			          </p>
+			          <p>
+			          	<span>📜Link thống kê viện phí</span><br>
+			          	<span>2020: https://bit.ly/2ULxqGA</span><br>
+			          	<span>2019: http://bit.ly/2XynRtp</span><br>
+			          </p>
+				</div>
+				<div class="content_2_col2">
+					<div class="box_content_2_col_2">
+						<img src="https://hanoipetadoption.com/admin/user-content/256b940f-9028-443d-8fcf-f39f5f1618af.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="btn_2">
+				<a href="#"><label>ỦNG HỘ NGAY</label></a>
+			</div>
+		</div>
+		<div class="content_3">
+			<h1>CÁC PHƯƠNG THỨC ỦNG HỘ KHÁC</h1>
+			<div class="box_content_3">
+				<div class="content_3_col" id="content_3_col_1">
+					<div >
+						<img src="https://hanoipetadoption.com/admin/user-content/Donate/c3dbc1ed-917a-4378-9288-d9e63084ea0c.png" alt="">
+					</div>
+	                <h3>Bỉm</h3>
+				</div>
+				<div class="content_3_col">
+					<div >
+						<img src="https://hanoipetadoption.com/admin/user-content/Donate/7f1c2e8e-886f-453c-becc-a2fc21abc62a.png" alt="">
+					</div>
+	                <h3>Quần áo</h3>
+				</div>
+				<div class="content_3_col">
+					<div >
+						<img src="https://hanoipetadoption.com/admin/user-content/Donate/953e4616-2614-4c17-873b-2c0722ec7929.png" alt="">
+					</div>
+	                <h3>Thức ăn</h3>
+				</div>
+			</div>		
+			<div class="btn_3">
+				<a href="#"><label>ỦNG HỘ NGAY</label></a>
+			</div>
+		</div>
+		<div class="content_4">
+			<h1>BÉ NGOAN TRONG TUẦN</h1>
+			<div class="box_content_4_pet">
+				<div class="content_4_pet" id="content_4_pet"></div>
+				<div class="btn_4">
+					<a href="adoptpage.html"><label>NHẬN NUÔI</label></a>
+				</div>
+			</div>
+		</div>
+		<div class="content_5">
+			<div class="content_5_slogan">
+				<h2>Danh sách mạnh thường quân</h2>
+			</div>
+			<div class="content_5_btn">
+				<div class="btn_5">
+					<a href="#"><label>XEM THÊM</label></a>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer_information">
+			<div class="footer_information_col" id="footer_information_col_1">
+				<div class="footer_logo">
+					<img src="image/logo.png" id="footer_logo" alt="">
+				</div>
+				<div class="footer_name_brand">
+					<h1>ADOPTION</h1>
+				</div>
+				<div class="footer_icon">
+					<i class="fab fa-facebook-square"><a href="#"></a></i>
+					<i class="fab fa-youtube"><a href="#"></a></i>
+					<i class="fab fa-instagram-square"><a href="#"></a></i>
+				</div>
+			</div>
+			<div class="footer_information_col" id="footer_information_col_2">
+				<h3>Về chúng tôi</h3>
+				<p>Nhóm trẻ tình nguyện viên Việt Nam và quốc tế, hoạt động vì tình yêu chó mèo.</p>
+				<h3>Thông tin liên hệ</h3>
+				<i class="fas fa-map-marker-alt"></i><span>Đà Nẵng - Việt Nam</span><br>
+				<i class="far fa-envelope"></i><span><a href="#">danangaoption.com</a></span><br>
+				<i class="fas fa-phone"></i><span><a href="#">(+84)70 560 5264</a></span><br>
+			</div>
+			<div class="footer_information_col" id="footer_information_col_3">
+				<div class="box_fb_information">
+					<div class="fb_information">
+						<div class="fb_logo"><img src="image/info-4.jpg" id="fb_logo"></div>
+						<div class="fb_name">
+							<a href="#">ADOPTION-Nhận nuôi thú cưng</a><br>
+							<span>123,456 lượt thích</span>
+						</div>
+					</div>
+					<div class="fb_btn_action">
+						<div class="fb_btn_like">
+							<a href="#"><i class="fab fa-facebook-square"></i><span>Thí</i>ch Trang</span></a>
+						</div>
+						<div class="fb_btn_mess">
+							<a href="#"><i class="fab fa-facebook-messenger"></i><span>Gửi tin nhắn</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_coppyright">
+			<p>Copyright 2019 / Designed by ADOPTION</p>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+	</div>
+</body>
+</html>

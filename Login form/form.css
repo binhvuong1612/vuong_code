@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+
+	background-image: url('https://images.wallpaperscraft.com/image/cat_box_sleep_rest_purebred_99124_1920x1200.jpg');
+	/* Full height */
+
+	  /* Center and scale the image nicely */
+	  /* background-position: center; */
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	
+}
+#container{
+
+
+}
+#btn-signout{
+	position: absolute;
+	right: 20px;
+}
+#login-box{
+	
+	width: 20%;
+	margin: 0px auto;
+	padding-top: 200px;
+	
+	color: white;
+	text-align: center;
+}
+
+h1{	
+	font-weight: 700;
+	margin-top : 0;
+
+}
+.txtb{
+	display: block;
+	width: 240px;
+	background-color: #ffffff28;
+	color: #333;
+	border: 1px solid white;
+	padding: 10px 20px;
+	margin: 10px 0;
+	border-radius: 6px;
+	text-align: center;
+	font-weight: 700;
+}
+.btn{
+	display: block;
+	margin: 3px 0;
+	width: 240px;
+	height: 30px;
+	background-color: #2c3e50;
+	border: 0;
+	border-radius: 6px;
+	color: #fff;
+	cursor: pointer;
+}
+.btn-second{
+	display: block;
+	float: right;
+	margin: 3px 2px;
+	width: 117px;
+	height: 30px;
+	justify-content: center;
+	background-color: #C70039;
+	border: 0;
+	border-radius: 6px;
+	color: #fff;
+	cursor: pointer;
+	
+}
+#btn-another{
+	overflow: hidden;
+}
+.btn-third{
+	display: block;
+	float: left;
+	margin: 3px 2px;
+	width: 117px;
+	height: 30px;
+	justify-content: center;
+	background-color: #C70039;
+	border: 0;
+	border-radius: 6px;
+	color: #fff;
+	cursor: pointer;
+	
+}
+
+#birthday{
+	cursor: pointer;
+	color: #333;
+	height: 37px;
+	font-weight: 700;
+}
+#type_user{
+	text-align: center;
+	height: 37px; 
+	color: #333;
+	font-weight: 700;
+	cursor: pointer;
+	padding-top: 5px;
+	padding-left: 85px;
+
+	box-sizing: border-box;
+}
+img{
+	height: 200px;
+	width: 200px;
+}
+#signout{
+	position: relative;
+	top:20px;
+	left: 10px; 
+}
+#signup-box{
+	display: none;
+	width: 20%;
+	margin: 0px auto;
+	padding-top: 120px;
+	
+	color: white;
+	text-align: center;
+}

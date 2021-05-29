@@ -1,0 +1,16 @@
+/*--------------CSS for TASK CONTAINER------*/
+.task_container{
+    background-color:#fff;
+    width:100%;
+    padding-top: 3px;
+    margin:0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.task_container:hover{
+    box-shadow: -2px 2px #75b79e;
+}

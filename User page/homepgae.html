@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HOME PAGE</title>
+	<link rel="stylesheet" href="font-awsome/all.min.css">
+	<link rel="stylesheet" href="css/resetCSS.css">
+	<link rel="stylesheet" href="css/headerCSS.css">
+	<link rel="stylesheet" type="text/css" href="css/homepage.css">
+	<link rel="stylesheet" href="css/footerCSS.css">
+
+	<link rel="stylesheet" type="text/css" href="css/btnScrollBackToTop.css">
+	<script type="text/javascript" src="js/btnScrollBackToTop.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    
+    <script type="text/javascript" src="js/homepage.js"></script>
+
+</head>
+<body onload="homepage()">
+	<script type="text/javascript">
+		function signout(){
+		    firebase.auth().signOut();
+		    alert("Logged Out!");
+		    location.assign("file:///C:/Users/ADMIN/Desktop/Du%20Lieu%20Cua%20Vuong/HTML_CSS_JS/form/form.html");
+		}
+	</script>
+	<div class="background"></div>
+	<div class="header">
+		<div class="header_information" id="header_information">
+			<div class="left_header">
+				<i class="fas fa-map-marker-alt"></i><span>Đà Nẵng - Việt Nam</span>
+				<i class="far fa-envelope"></i><span><a href="#">danangaoption.com</a></span>
+				<i class="fas fa-phone"></i><span><a href="#">(+84)70 560 5264</a></span>
+			</div>
+			<div class="right_header">
+				<span><i class="fas fa-search"></i></span>
+		        <a href="#" onclick="signout()"><i class="fas fa-power-off"></i></a>
+			</div>
+			
+		</div>
+		<div class="header_menu" id="header_menu">
+			<div class="header_icon">
+					<i class="fab fa-facebook-square"><a href="#"></a></i><br>
+					<i class="fab fa-youtube"><a href="#"></a></i><br>
+					<i class="fab fa-instagram-square"><a href="#"></a></i><br>
+			</div>
+			<div class="left_menu">
+				<div class="header_logo">
+					<img src="image/logo.png" id="header_logo" alt="">
+				</div>
+				<div class="header_name_brand">
+					<h1>ADOPTION</h1>
+				</div>
+			</div>
+			<div class="right_menu">
+				<nav>
+					<ul>
+						<li><i class="fas fa-paw"></i><a href="homepgae.html">HOME</a></li>
+						<li><i class="fas fa-paw"></i><a href="adoptpage.html">ADOPT</a></li>
+						<li><i class="fas fa-paw"></i><a href="donatepage.html">DONATE</a></li>
+						<li><i class="fas fa-paw"></i><a href="volumteerpage.html">VOLUMTEER</a></li>
+						<li><i class="fas fa-paw"></i><a href="newspage.html">NEWS</a></li>
+						<li><i class="fas fa-paw"></i><a href="blogpage.html">BLOG</a></li>
+						<li><i class="fas fa-paw"></i><a href="contactpage.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="body" id="body">
+		<div class="slider">
+			<div class="slides">
+				<input type="radio" name="radio_btn" id="radio1">
+				<input type="radio" name="radio_btn" id="radio2">
+				<input type="radio" name="radio_btn" id="radio3">
+				<input type="radio" name="radio_btn" id="radio4">
+				<input type="radio" name="radio_btn" id="radio5">
+				<input type="radio" name="radio_btn" id="radio6">
+				<input type="radio" name="radio_btn" id="radio7">
+
+
+				<div class="slide first">
+					<img src="https://hanoipetadoption.com/admin/user-content/Carousel/326bea82-ba50-4777-abb6-5e45ba8f3faf.jpeg" alt="">
+				</div>
+				<div class="slide">
+					<img src="https://hanoipetadoption.com/admin/user-content/Carousel/a4cdde6d-2f14-417f-8170-bf1704688c25.jpg" alt="">
+				</div>
+				<div class="slide">
+					<img src="https://hanoipetadoption.com/admin/user-content/Carousel/7bd34d98-6205-4447-8cd0-a89b5bf6721d.jpg" alt="">
+				</div>
+				<div class="slide">
+					<img src="https://hanoipetadoption.com/admin/user-content/Carousel/d49ff5a3-3f92-4dfa-be28-a6e0157ae005.jpg" alt="">
+				</div>
+				<div class="slide">
+					<img src="https://hanoipetadoption.com/admin/user-content/Carousel/b39e6553-5b33-4fd7-b10a-99ff21bfd5a7.jpg" alt="">
+				</div>
+				<div class="slide">
+					<img src="https://hanoipetadoption.com/admin/user-content/Carousel/5d835eb4-6721-4558-8cb9-f6684a4cd6c0.jpg" alt="">
+				</div>
+				<div class="slide">
+					<img src="https://hanoipetadoption.com/admin/user-content/Carousel/db696201-c204-49cc-9372-eef3d21c897a.jpg" alt="">
+				</div>
+
+				<div class="navigation_auto">
+					<div class="auto_btn1"></div>
+					<div class="auto_btn2"></div>
+					<div class="auto_btn3"></div>
+					<div class="auto_btn4"></div>
+					<div class="auto_btn5"></div>
+					<div class="auto_btn6"></div>
+					<div class="auto_btn7"></div>
+				</div>
+				
+				<div class="navigation_manual">
+					<label for="radio1" class="manual_btn"></label>
+					<label for="radio2" class="manual_btn"></label>
+					<label for="radio3" class="manual_btn"></label>
+					<label for="radio4" class="manual_btn"></label>
+					<label for="radio5" class="manual_btn"></label>
+					<label for="radio6" class="manual_btn"></label>
+					<label for="radio7" class="manual_btn"></label>
+				</div>
+
+				<script type="text/javascript">
+					var counter = 1;
+					setInterval(function(){
+						document.getElementById('radio'+counter).checked = true;
+						counter++;
+						if (counter > 7) {
+							counter = 1;
+						}
+					},2500);
+				</script>
+			</div>
+		</div>
+		<div class="content_1">
+			<div class="box_content_1">
+				<div class="content_1_col1">
+					<h1>Nhận Nuôi Thú Cưng - Danang Pet Adoption</h1>
+			          <p>Chúng tôi là một nhóm trẻ gồm tình nguyện viên Việt Nam và một số bạn nước ngoài, cùng hoạt động vì tình yêu chó mèo. Tôn chỉ hoạt động của chúng tôi là không từ bỏ nỗ lực với bất kỳ con vật nào, dù bé có ốm yếu hay tàn tật tới đâu, bởi mỗi thú cưng đều cần có cơ hội hi vọng vào một tương lai tốt đẹp. Chúng tôi cố gắng chăm sóc tốt nhất có thể, phần nào bù đắp lại những tổn thương cho các bé được cứu hộ về dù là hoang, lạc, bị bỏ rơi hay bạo hành. Ngoài ra, chúng tôi cũng luôn nỗ lực tìm mái ấm yêu thương các bé trọn đời. Và cuối cùng, chúng tôi giúp nâng cao nhận thức về trách nhiệm của chủ nuôi thông qua mạng xã hội và các hoạt động thiện nguyện.
+			          </p>
+			          <p>
+			             Là một trong những trạm cứu hộ thú cưng ít ỏi tại Hà Nội, hoạt động từ năm 2015 đến nay, Nhóm đã góp phần cứu giúp trên 2,000 ca chó mèo bị bỏ rơi, hoang lạc, bị bạo hành, đồng thời tìm mái ấm mới cho hàng trăm bé.
+			          </p>
+				</div>
+				<div class="content_1_col2">
+					<img src="image/info-4.jpg" >
+				</div>
+			</div>
+			<div class="btn_1">
+				<a href="#"><label>VỀ CHÚNG TÔI</label></a>
+			</div>
+		</div>
+		<div class="content_2">
+			<div class="content_2_col" id="content_2_col1">
+				<div class="background_outside">
+					<div class="background_inside">
+						<div class="card_body">
+							<div class="box_content_2_img">
+								<img class="content_2_img" id="content_2_img_1" src="image/info-3.jpg" alt="Card image cap">
+							</div>
+			                <h2 class="card-title"><a href="donatepage.html">ỦNG HỘ</a></h2>
+			                <p class="card-text">Giúp duy trì hoạt động của HPA qua hình thức quyên góp tiền hoặc nhu yếu phẩm.</p>		                  
+		                </div>
+		                <div class="btn_2">
+		                	<a href="donatepage.html"><label>XEM THÊM</label></a>
+		                </div>
+					</div>
+					<img src="image/bg.png" alt="" class="background_img">
+				</div>
+			</div>
+			<div class="content_2_col" id="content_2_col2">
+				<div class="background_outside">
+					<div class="background_inside">
+						<div class="card_body">
+							<div class="box_content_2_img">
+								<img class="content_2_img" id="content_2_img_2" src="image/info.jpg" alt="Card image cap">
+							</div>
+			                <h2 class="card-title"><a href="volumteerpage.html">TÌNH NGUYỆN VIÊN</a></h2>
+			                <p class="card-text">Hành động để thay đổi cuộc sống chó, mèo và các thú cưng khác</p>		                  
+		                </div>
+		            	<div class="btn_2">
+		                	<a href="volumteerpage.html"><label>XEM THÊM</label></a>
+		                </div>
+					</div>
+					<img src="image/bg.png" alt="" class="background_img">
+				</div>
+			</div>
+			<div class="content_2_col" id="content_2_col3">
+				<div class="background_outside">
+					<div class="background_inside">
+						<div class="card_body">
+							<div class="box_content_2_img">
+								<img class="content_2_img" id="content_2_img_3" src="image/info-2.jpg" alt="Card image cap">
+							</div>
+			                <h2 class="card-title"><a href="adoptpage.html">NHẬN NUÔI</a></h2>
+			                <p class="card-text">Hãy nhận nuôi, cưu mang, đừng xua đuổi và yêu thương động vật bị bỏ rơi.</p>		                  
+		                </div>
+		            	<div class="btn_2">
+		                	<a href="adoptpage.html"><label>XEM THÊM</label></a>
+		                </div>
+					</div>
+					<img src="image/bg.png" alt="" class="background_img">
+				</div>
+			</div>
+
+		</div>
+		<div class="content_3">
+			<h1>BÉ NGOAN TRONG TUẦN</h1>
+			<div class="box_content_3_pet">
+				<div class="content_3_pet" id="content_3_pet"></div>
+				<div class="btn_3">
+					<a href="adoptpage.html"><label>NHẬN NUÔI</label></a>
+				</div>
+			</div>
+		</div>
+		<div class="content_4">
+			<h1>VIDEO</h1>
+			<div class="box_content_4_video">
+				<div class="content_4_video" id="content_4_video"></div>
+				<div class="btn_4">
+					<a href="#"><label>XEM THÊM</label></a>
+				</div>
+			</div>
+		</div>
+		<div class="content_5">
+			<div class="content_5_col" id="content_5_col_1">
+				<div >
+					<i class="fas fa-clinic-medical"></i><br> 
+				</div>
+                <span class="counter" >178</span><br>
+                <h3>Ca cứu hộ</h3>
+			</div>
+			<div class="content_5_col">
+				<div >
+					<i class="fas fa-hands-helping"></i><br> 
+				</div>
+                <span class="counter" >178</span><br>
+                <h3>Đã có chủ</h3>
+			</div>
+			<div class="content_5_col">
+				<div >
+					<i class="fas fa-paw"></i><br> 
+				</div>
+                <span class="counter" >178</span><br>
+                <h3>Chờ tìm chủ</h3>
+			</div>
+			<div class="content_5_col">
+				<div >
+					<i class="fas fa-dog"></i><br> 
+				</div>
+                <span class="counter" >178</span><br>
+                <h3>Chưa sẵn sàng</h3>
+			</div>
+			
+		</div>
+		<div class="content_6">
+			<h1>TIN TỨC</h1>
+			<div class="box_content_6_news">
+				<div class="content_6_news" id="content_6_news"></div>
+				<div class="btn_6">
+					<a href="#"><label>XEM THÊM</label></a>
+				</div>
+			</div>
+		</div>
+		<div class="content_7">
+			<div class="content_7_slogan">
+				<h3>Bạn Đã Sẵn Sàng Giúp Đỡ?</h3>
+			</div>
+			<div class="content_7_btn">
+				<div class="btn_7">
+					<a href="donatepage.html"><label>ỦNG HỘ NGAY</label></a>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer_information">
+			<div class="footer_information_col" id="footer_information_col_1">
+				<div class="footer_logo">
+					<img src="image/logo.png" id="footer_logo" alt="">
+				</div>
+				<div class="footer_name_brand">
+					<h1>ADOPTION</h1>
+				</div>
+				<div class="footer_icon">
+					<i class="fab fa-facebook-square"><a href="#"></a></i>
+					<i class="fab fa-youtube"><a href="#"></a></i>
+					<i class="fab fa-instagram-square"><a href="#"></a></i>
+				</div>
+			</div>
+			<div class="footer_information_col" id="footer_information_col_2">
+				<h3>Về chúng tôi</h3>
+				<p>Nhóm trẻ tình nguyện viên Việt Nam và quốc tế, hoạt động vì tình yêu chó mèo.</p>
+				<h3>Thông tin liên hệ</h3>
+				<i class="fas fa-map-marker-alt"></i><span>Đà Nẵng - Việt Nam</span><br>
+				<i class="far fa-envelope"></i><span><a href="#">danangaoption.com</a></span><br>
+				<i class="fas fa-phone"></i><span><a href="#">(+84)70 560 5264</a></span><br>
+			</div>
+			<div class="footer_information_col" id="footer_information_col_3">
+				<div class="box_fb_information">
+					<div class="fb_information">
+						<div class="fb_logo"><img src="image/info-4.jpg" id="fb_logo"></div>
+						<div class="fb_name">
+							<a href="#">ADOPTION-Nhận nuôi thú cưng</a><br>
+							<span>123,456 lượt thích</span>
+						</div>
+					</div>
+					<div class="fb_btn_action">
+						<div class="fb_btn_like">
+							<a href="#"><i class="fab fa-facebook-square"></i><span>Thí</i>ch Trang</span></a>
+						</div>
+						<div class="fb_btn_mess">
+							<a href="#"><i class="fab fa-facebook-messenger"></i><span>Gửi tin nhắn</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_coppyright">
+			<p>Copyright 2019 / Designed by ADOPTION</p>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="form.css">
+	
+	
+	<!------------------------------------------------------------------------------>
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+   
+
+	<script src="form.js"></script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="btn-signout">
+		<button onclick="signout()" id="signout" class="btn-second">Sign Out</button>
+		</div>
+		
+		<div id="login-box">
+
+				<h1 id="header">Welcome</h1>
+
+
+				<input type="email" placeholder="Email" id="email" class="txtb">
+				<input type="password" placeholder="Password" id="password" class="txtb">
+				
+				<button onclick="signin()" id="signin" class="btn" style="background-color: #C70039;">Sign In</button>
+				<button onclick="signup()" id="signupform" class="btn">Sign Up</button>
+				
+				
+				<!-- <div id="btn-another">
+					<button onclick="get()" id="get" class="btn-third">Find User</button>
+					<button onclick="updates()" id="updates" class="btn-third">Update</button>
+					<button onclick="remove()" id="remove" class="btn-third">Delete</button> 
+				<button onclick="add_img()" id="uploaded" class="btn-third">uploaded</button>
+				</div> -->
+				
+				
+		</div>
+
+		<div id="signup-box">
+				<h1 id="header">Welcome</h1>
+
+
+				<input type="email" placeholder="Email" id="email_signup" class="txtb">
+				<input type="password" placeholder="Password" id="password_signup" class="txtb">
+				<input type="name" placeholder="User Name" id="username" class="txtb">
+				<input type="text" placeholder="Phone" id="phone" class="txtb">
+				<input type="text" placeholder="Address" id="address" class="txtb">
+				<input type="date" id="birthday" placeholder="ngay sinh" class="txtb">
+				
+				<!-- <select multiple id="type_user"  class="txtb">
+					<option value="Volumteers">Volumteers</option>
+					<option value="Employees">Employees</option>
+					<option value="Adopters">Adopters</option>	
+				</select>  -->
+				<form>
+                      Select your Type User:
+                      <select id="type_user" class="txtb">
+                        <option value="Volumteers">Volumteers</option>
+                        <option value="Adopters">Adopters</option>
+                        <option value="Employees">Employees</option>
+                      </select>
+                </form>
+					
+				<button onclick="signin()" id="signin" class="btn" style="background-color: #C70039;">Sign In</button>
+				<button onclick="signup()" id="signupform" class="btn">Sign Up</button>
+		</div>
+	</div>	
+	
+
+</body>
+</html>
+
+
+
+			

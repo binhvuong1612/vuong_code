@@ -1,0 +1,142 @@
+/*FOOTER_CSS*/
+
+.footer{
+	height: 500px;
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+}
+.footer_information{
+	height: 380px;
+	width: 86%;
+	margin-left: 6%;
+	padding-top: 70px;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.footer_information_col{
+	float: left;
+	margin-left: 60px;
+	overflow: hidden;
+}
+#footer_logo{
+	height: 100px;
+	width: 160px;
+	margin-left: 0px;
+	cursor: pointer;
+}
+.footer_name_brand{
+	color: #ffc107;
+	cursor: pointer;
+}
+.footer_icon{
+	margin-left: 40px;
+}
+.footer_icon i{
+	color: #C70039;
+	font-size: 20px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.footer_icon i:hover{
+	color: #007bff;
+	transition: 0.5s;
+}
+.footer_information_col h3{
+	display: block;
+	padding-bottom:5px ;
+	border: none;
+	border-bottom: 2px solid #6c757d;
+	width: 170px;	
+}
+#footer_information_col_2{
+	width: 33%;
+	color: #6f6f6f;
+}
+#footer_information_col_2 p{
+	padding: 20px 0px ;
+}
+#footer_information_col_2 i{
+	margin-top: 15px;
+	margin-right: 3px;
+}
+#footer_information_col_2 a{
+	color: blue;
+}
+#footer_information_col_3{
+	width: 30%;
+}
+.box_fb_information{
+	background-image: url('https://images.wallpaperscraft.com/image/cat_art_bowl_126470_320x240.jpg');
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 100%;
+    overflow: hidden;
+}
+.fb_information{
+	overflow: hidden;
+	height: 70%;
+}
+.fb_logo{
+	float: left;
+}
+.fb_name{
+	float: left;
+	margin: 5px;
+}
+.fb_name a{
+	color: #fff;
+}
+.fb_name span{
+	color: #fff;
+	font-size: 13px;
+}
+#fb_logo{
+	height: 60px;
+	width: 60px;
+	margin: 5px;
+}
+.fb_btn_action{
+	overflow: hidden;
+}
+.fb_btn_like{
+	margin: 5px;
+	padding: 3px;
+	border-radius: 4px;
+	background-color: #fff;
+	float: left;
+}
+.fb_btn_mess{
+	margin: 5px;
+	padding: 3px;
+	border-radius: 4px;
+	background-color: #fff;
+	float: right;
+}
+.fb_btn_action i{
+	margin-right: 3px;
+	color: blue;
+}
+.fb_btn_action a{
+	margin-right: 3px;
+	color: #333;
+	font-size: 12px;
+	font-weight: 700;
+}
+.footer_coppyright{
+	background-image: url("https://hanoipetadoption.com/Images/patterns/pattern1.png");
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.footer_coppyright p{
+	display: block;
+	text-align: center;
+	font-weight: 700;
+    font-size: 13px;
+}
+
+

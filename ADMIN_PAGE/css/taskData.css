@@ -1,0 +1,81 @@
+
+/*CSS cua TaskData*/
+.task_data{
+    float: left;
+    width: 37%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.task_data p{
+    font-family: monospace;
+    color: grey;
+    font-size: 13px;
+    margin-bottom: 8.5px;
+    border-bottom: 1px dashed #75b79e;
+    box-sizing: border-box;
+}
+
+.task_data input, .task_data textarea{
+    font-family: monospace;
+    color: grey;
+    border: none;
+    outline: none;
+    height: 15px;
+    border-bottom: 1px dashed #75b79e;
+    font-size: 13px;
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-bottom: 6px;
+
+}
+.task_data form{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.task_data select{
+    font-family: monospace;
+    color: grey;
+    border: none;
+    outline: none;
+    height: 15px;
+    border-bottom: 1px dashed #75b79e;
+    font-size: 13px;
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.task_data span{
+    color: #75b79e;
+    font-weight: 700;
+}
+.task_data #btn_comment{
+    display: block;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 30px;
+    justify-content: center;
+    background-color: #75b79e;
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+}
+.task_data a{
+    text-decoration: underline;
+    display: block;
+    font-family: monospace;
+    color: grey;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.task_data a:hover{
+    color: #75b79e;
+
+}

@@ -1,0 +1,16 @@
+/*CSS cua TitleData*/
+.title_data{
+    float: left;
+    margin-top: 5px;
+    padding: 0px 25px;
+    width: 14%;
+    box-sizing: border-box;
+    margin-top: 7px;
+    overflow: hidden;
+}
+.title_data p{
+    font-family: monospace;
+    color: grey;
+    font-size: 13px;
+    margin-bottom: 8.5px;
+}

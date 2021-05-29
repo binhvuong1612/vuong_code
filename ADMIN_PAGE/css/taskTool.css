@@ -1,0 +1,340 @@
+  
+
+  /*--------------CSS for TASK TOOLS------*/
+  .task_tool{
+    overflow: hidden;
+    display: inline-block;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+/*   #task_done_button, #task_done_services_button,#task_done_donate_button,#task_done_pet_button,#task_done_video_button{
+    float:right;
+    height:30px;
+    width:30px;
+    cursor:pointer;
+    background-color:#fff;
+    border:none;
+    border-radius:20px;
+    outline:none;
+    margin-right: 5px;
+  } */
+.task_done_button{
+    float:right;
+    height:30px;
+    width:30px;
+    cursor:pointer;
+    background-color:#fff;
+    border:none;
+    border-radius:20px;
+    outline:none;
+    margin-right: 5px;
+}
+.task_done_button:hover{
+  background-color:#75b79e;
+  color:white;
+}
+.task_edit_button{
+  float:right;
+    height:30px;
+    width:30px;
+    cursor:pointer;
+    background-color:#fff;
+    border:none;
+    border-radius:20px;
+    outline:none;
+    margin-right: 5px;
+}
+.task_edit_button:hover{
+    background-color:#ffed83;
+    color:white;  
+}
+.task_delete_button{
+    float:right;
+    height:30px;
+    width:30px;
+    cursor:pointer;
+    background-color:#fff;
+    border:none;
+    border-radius:20px;
+    outline:none;
+    margin-right: 5px;
+}
+.task_delete_button:hover{
+    background-color:#fa163f;
+    color:white;
+}
+.task_done_button:active, .task_edit_button:active, .task_delete_button:active{
+  transform: translateY(4px);
+}
+
+/* .delete_button{
+    float:right;
+    height:30px;
+    width:30px;
+    cursor:pointer;
+    background-color:#fff;
+    border:none;
+    border-radius:20px;
+    outline:none;
+    margin-right: 5px;
+}
+.delete_button:hover{
+    background-color:#fa163f;
+    color:white;
+} */
+/* 
+  #task_done_button:hover{
+    background-color:#75b79e;
+    color:white;
+  }
+  #task_done_services_button:hover{
+    background-color:#75b79e;
+    color:white;
+  }
+  #task_done_donate_button:hover{
+    background-color:#75b79e;
+    color:white;
+  }
+  #task_done_pet_button:hover{
+    background-color:#75b79e;
+    color:white;
+  }
+  #task_done_video_button:hover{
+    background-color:#75b79e;
+    color:white;
+  }
+
+ */
+/* 
+  #task_done_button:active{
+    transform: translateY(4px);
+  }
+  #task_done_services_button:active{
+    transform: translateY(4px);
+  }
+  #task_done_donate_button:active{
+    transform: translateY(4px);
+  }
+  #task_done_pet_button:active{
+    transform: translateY(4px);
+  }
+  #task_done_video_button:active{
+    transform: translateY(4px);
+  } */
+/* 
+  #task_edit_button,#task_edit_services_button,#task_edit_donate_button,#task_edit_pet_button,#task_edit_video_button{
+    float:right;
+    height:30px;
+    width:30px;
+    cursor:pointer;
+    background-color:#fff;
+    border:none;
+    border-radius:20px;
+    outline:none;
+    margin-right: 5px;
+  } */
+
+ /*  #task_edit_button_editing{
+    float:right;
+    height:30px;
+    width:30px;
+    cursor:pointer;
+    background-color:#ffed83;
+    color: white;
+    border:none;
+    border-radius:20px;
+    outline:none;
+    margin-right: 5px;
+  } */
+  
+ /*  #task_edit_button:hover{
+    background-color:#ffed83;
+    color:white;
+  }
+  #task_edit_services_button:hover{
+    background-color:#ffed83;
+    color:white;
+  }
+  #task_edit_donate_button:hover{
+    background-color:#ffed83;
+    color:white;
+  }
+  #task_edit_pet_button:hover{
+    background-color:#ffed83;
+    color:white;
+  }
+  #task_edit_video_button:hover{
+    background-color:#ffed83;
+    color:white;
+  }
+
+  #task_edit_button:active{
+    transform: translateY(4px);
+  }
+  #task_edit_services_button:active{
+    transform: translateY(4px);
+  }
+  #task_edit_donate_button:active{
+    transform: translateY(4px);
+  }
+  #task_edit_pet_button:active{
+    transform: translateY(4px);
+  }
+  #task_edit_video_button:active{
+    transform: translateY(4px);
+  }
+ */
+ /*  #task_delete_button,#task_delete_donate_button,#task_delete_pet_button,#task_delete_video_button{
+    float:right;
+    height:30px;
+    width:30px;
+    cursor:pointer;
+    background-color:#fff;
+    border:none;
+    border-radius:20px;
+    outline:none;
+    margin-right: 5px;
+  }
+
+  #task_delete_button:hover{
+    background-color:#fa163f;
+    color:white;
+  }
+  #task_delete_services_button:hover{
+    background-color:#fa163f;
+    color:white;
+  }
+  #task_delete_donate_button:hover{
+    background-color:#fa163f;
+    color:white;
+  }
+  #task_delete_pet_button:hover{
+    background-color:#fa163f;
+    color:white;
+  }
+  #task_delete_video_button:hover{
+    background-color:#fa163f;
+    color:white;
+  }
+
+  #task_delete_button:active{
+    transform: translateY(4px);
+  }
+  #task_delete_services_button:active{
+    transform: translateY(4px);
+  }
+  #task_delete_donate_button:active{
+    transform: translateY(4px);
+  }
+  #task_delete_pet_button:active{
+    transform: translateY(4px);
+  }
+  #task_delete_video_button:active{
+    transform: translateY(4px);
+  }
+   */
+  /*--------------CSS for TOOLS EDITING ------*/
+  .task_data_editing{
+    border-bottom: 1px solid #ffed83;
+    outline: none;
+  }
+  .task_data_done{
+    border: none;
+  }
+
+   /*--------------CSS for box-add-user ------*/
+  .task_data_content{
+    font-family: monospace;
+    color: grey;
+    font-size: 12px;
+  }
+  .txtb{
+    border: none;
+    border-bottom: 1px solid #ffed83;
+    border-right: 1px solid #ffed83;
+    border-radius: 5px;
+    outline: none;
+    height: 14px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: grey;
+    font-size: 12px;
+  }
+  
+  #birthday{
+    color: grey;
+
+  }
+.task_btn{
+    float: right;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: grey;
+    margin-right: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    overflow: hidden;
+}
+.task_btn form{
+    margin-top: 30px;
+}
+.btn-box{
+    overflow: hidden;
+}
+  .signup-btn{
+    float: left;
+    background-color: #C70039;
+    padding: 8px 30px;
+    color: #fff;
+    display: block;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+  .cancel-btn{
+    color: #757575;
+    font-weight: 700;
+    display: block;
+    background-color: #fafafa;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    float: left;
+  }
+  .cancel-btn:hover{
+    background-color: #eee;
+    color: rgba(0,0,0,.54);
+    transition: 0.5s;
+    
+  }
+
+.check_box{
+  border: 1px solid  #ffed83;
+}
+.type_user_box{
+  border: none;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.type_user_box div{
+  float: left;
+  margin-left: 5px;
+}
+
+#mySelect{
+    color: #333;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #75b79e;
+}

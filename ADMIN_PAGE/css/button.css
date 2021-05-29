@@ -1,0 +1,14 @@
+/*------------CSS NUT BUTTON-------------------------*/
+.btn_add{
+  display: block;
+  margin: 3px 2px;
+  padding-left:20px;
+  padding-right:20px; 
+  height: 30px;
+  justify-content: center;
+  background-color: #C70039;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}

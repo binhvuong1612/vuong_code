@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VOLUMTEER PAGE</title>
+	<link rel="stylesheet" href="font-awsome/all.min.css">
+	<link rel="stylesheet" href="css/resetCSS.css">
+	<link rel="stylesheet" href="css/headerCSS.css">
+	<link rel="stylesheet" type="text/css" href="css/volumteerpage.css">
+	<link rel="stylesheet" href="css/footerCSS.css">
+	<link rel="stylesheet" type="text/css" href="css/btnScrollBackToTop.css">
+	<script type="text/javascript" src="js/btnScrollBackToTop.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    
+    <script type="text/javascript" src="js/volumteerpage.js"></script>
+
+</head>
+<body onload="list_pet()">
+	<div class="header">
+		<div class="header_information" id="header_information">
+			<div class="left_header">
+				<i class="fas fa-map-marker-alt"></i><span>Đà Nẵng - Việt Nam</span>
+				<i class="far fa-envelope"></i><span><a href="#">danangaoption.com</a></span>
+				<i class="fas fa-phone"></i><span><a href="#">(+84)70 560 5264</a></span>
+			</div>
+			<div class="right_header">
+				<span><i class="fas fa-search"></i></span>
+				<button onclick="signout()" id="btn_signout" class="btn-second">Sign Out</button>
+			</div>
+			
+		</div>
+		<div class="header_menu" id="header_menu">
+			<div class="header_icon">
+					<i class="fab fa-facebook-square"><a href="#"></a></i><br>
+					<i class="fab fa-youtube"><a href="#"></a></i><br>
+					<i class="fab fa-instagram-square"><a href="#"></a></i><br>
+			</div>
+			<div class="left_menu">
+				<div class="header_logo">
+					<img src="image/logo.png" id="header_logo" alt="">
+				</div>
+				<div class="header_name_brand">
+					<h1>ADOPTION</h1>
+				</div>
+			</div>
+			<div class="right_menu">
+				<nav>
+					<ul>
+						<li><i class="fas fa-paw"></i><a href="homepgae.html">HOME</a></li>
+						<li><i class="fas fa-paw"></i><a href="adoptpage.html">ADOPT</a></li>
+						<li><i class="fas fa-paw"></i><a href="donatepage.html">DONATE</a></li>
+						<li><i class="fas fa-paw"></i><a href="volumteerpage.html">VOLUMTEER</a></li>
+						<li><i class="fas fa-paw"></i><a href="newspage.html">NEWS</a></li>
+						<li><i class="fas fa-paw"></i><a href="blogpage.html">BLOG</a></li>
+						<li><i class="fas fa-paw"></i><a href="contactpage.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="body" id="body">
+		<div class="content_1">
+			<h1>VOLUMTEER</h1>
+			<div class="btn_1">
+				<a href="homepgae.html">Home Page  ></a><span>Volumteer</span>
+			</div>
+		</div>
+		<div class="content_2">
+			<div class="box_content_2">
+				<div class="content_2_col1">
+					<h1>Giới Thiệu Tình Nguyện Viên Cứu Hộ Chó Mèo</h1>
+			          <p>Hoạt động cứu hộ của Hanoi Pet Adoption chỉ có thể thành công nhờ sự chung sức từ cộng đồng và các Tình nguyện viên. Có nhiều cách để bạn đóng góp phần của mình để thay đổi cuộc sống của một chú chó hay mèo: trở thành Người chăm sóc tạm thời (Foster), Tình nguyện tại nhà chung hay Tình nguyện viên cứu hộ. Hãy tham khảo thêm thông tin bên dưới.
+			      	  </p>
+				</div>
+				<div class="content_2_col2">
+					<div class="box_content_2_col_2">
+						<img src="https://hanoipetadoption.com/admin/user-content/5d4d003a-2692-4ba4-aa87-34721ef49644.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content_3">
+			<h1>THÔNG TIN TÌNH NGUYỆN VIÊN</h1>
+			<div class="box_content_3" id="box_1_content_3">
+				<div class="box_1_content_3_col1">
+					<div>
+						<img src="https://hanoipetadoption.com/admin/user-content/Volunteer/220885ad-73cd-4f2f-96e4-df481fb11400.jpg" alt="">
+					</div>
+				</div>
+				<div class="box_1_content_3_col2">
+					<h3>TNV Foster</h3>
+			          <p>Foster là người giúp nhóm chăm sóc tạm thời trong thời gian các bé chưa tìm được chủ. Đây có thể là các bé khỏe mạnh hoặc cần chăm sóc đặc biệt hơn. Nếu bạn không thể nhận nuôi, hãy mở cửa để cho các bé một mái ấm tạm thời, giúp các bé khỏe mạnh hơn, ngoan ngoãn hơn cũng như tận hưởng tình thương từ một người yêu động vật, đồng thời giúp chúng tôi giảm tải khối lượng công việc.
+			      	  </p>
+			      	  <div class="content_3_rule">
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Người nhận nuôi tạm thời (Foster) chịu trách nhiệm cung cấp nơi ở, thức ăn, nước uống, các vật dụng cần thiết và tìnhh thương cho bé.
+			      	  	</span><br>
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Trong trường hợp cần thiết, foster đảm nhận việc theo dõi quá trình chữa trị cho bé, đảm bảo chế độ ăn theo yêu cầu và giúp huấn luyện bé. Mọi chi phí y tế sẽ do Hanoi Pet Adoption chi trả. Foster có thể đóng góp vào chi phí này nhưng không bắt buộc.
+			      	  	</span><br>
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Foster cần thông báo ngay cho người phụ trách bé nếu có bất cứ phát sinh gì xảy ra: ốm đau, biểu hiện lạ, hành vi khác thường v.v...
+			      	  	</span><br>
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Không tự ý chuyển động vật mà tôi nhận chăm sóc tạm thời sang người khác chăm sóc hoặc nhận nuôi nếu không có sự đồng ý từ nhóm HPA.
+			      	  	</span><br>
+			      	  </div>
+				</div>
+			</div>
+			<div class="box_content_3" id="box_2_content_3">
+				<div class="box_2_content_3_col1">
+					<h3>TNV Dọn Dẹp Nhà Chung</h3>
+			          <p>Các bé chó mèo sau khi được cứu hộ và đã ổn định sẽ được chuyển về nhà chung trong quá trình chờ tìm chủ/foster. Các bé cần người giúp cho ăn uống đúng chế độ, dọn dẹp và chăm sóc y tế nếu cần. Tình nguyện viên nhà chung đảm nhận khối lượng công việc lớn khi phải quản lý khoảng 70 bé mèo và hơn 10 bé chó. Công việc này cần tính kiên nhẫn, cẩn thận, trách nhiệm cao và có tình thương với chó mèo. Tình nguyện viên có thể đăng ký giúp theo buổi lẻ. Với những người có thể làm cố định theo ca và làm 5 ngày mỗi tuần có thể được nhận trợ cấp công việc.
+			      	  </p>
+			      	 <div class="content_3_rule">
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Tuổi 20+.
+			      	  	</span><br>
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Có kinh nghiệm nuôi chó/mèo.
+			      	  	</span><br>
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Chăm chỉ, sạch sẽ và có trách nhiệm.
+			      	  	</span><br>
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Đảm bảo được thời gian đến nhà chung.
+			      	  	</span><br>
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Đảm bảo giữ bí mật địa chỉ nhà chung để tránh những thành phần xấu và chủ nuôi vô trách nhiệm đến vứt bỏ các bé.
+			      	  	</span><br>
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Không ngại bẩn khi dọn vệ sinh, không sợ mùi.
+			      	  	</span><br>
+			      	  </div>
+				</div>
+				<div class="box_2_content_3_col2">
+					<div>
+						<img src="https://hanoipetadoption.com/admin/user-content/Volunteer/7686847e-4f9a-45e2-ba09-262c24439752.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="box_content_3" id="box_3_content_3">
+				<div class="box_3_content_3_col1">
+					<div>
+						<img src="https://hanoipetadoption.com/admin/user-content/Volunteer/63aa2d9a-034e-4795-afb5-9b39b0cf6bbb.jpg" alt="">
+					</div>
+				</div>
+				<div class="box_3_content_3_col2">
+					<h3>TNV Cứu Hộ</h3>
+			          <p>Khi một bé chó hay mèo gặp nạn, cần cứu các bé càng sớm càng tốt để tránh trường hợp các bé lang thang gặp kẻ xấu hoặc bị xe tông. Vì thế, Tình nguyện viên cứu hộ đóng vai trò quan trọng trong việc các bé có sống sót và được giải cứu kịp thời hay không. Công việc này đòi hỏi việc di chuyển bất ngờ, thậm chí vào đêm khuya hay ngày nghỉ, có thể phải đi xa. Ngoài ra, Tình nguyện viên cũng cần được trang bị kiến thức để bảo đảm an toàn cho bản thân khi cứu hộ.
+			      	  </p>
+			      	  <div class="content_3_rule">
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Tuổi 20+.
+			      	  	</span><br>
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Có kinh nghiệm nuôi chó/mèo.
+			      	  	</span><br>
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Có khả năng tiếp cận hiện trường trong các khung giờ linh hoạt.
+			      	  	</span><br>
+			      	  </div>
+				</div>
+			</div>
+			<div class="box_content_3" id="box_4_content_3">
+				<div class="box_4_content_3_col1">
+					<h3>TNV Vận Chuyển</h3>
+			          <p>Ngoài các tình huống cứu hộ, Hanoi Pet Adoption còn cần các bạn giúp vận chuyển chó/mèo từ nhà chung tới bệnh viện, nhà foster hoặc chủ nuôi v.v... Hoặc nhận đồ quyên góp cho Nhóm và chuyển về nhà chung.
+			      	  </p>
+			      	  <div class="content_3_rule">
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Tuổi 20+.
+			      	  	</span><br>
+			      	  	<i class="fas fa-paw"></i><span>
+			      	  		Có phương tiện di chuyển riêng và có tinh thần trách nhiệm.
+			      	  	</span><br>
+			      	  </div>
+				</div>
+				<div class="box_4_content_3_col2">
+					<div>
+						<img src="https://hanoipetadoption.com/admin/user-content/Volunteer/af6839ed-6283-4615-8838-0c7933aede00.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="content_3_information">
+				<div class="box_content_3_information">
+					<h2>Bạn Muốn Tham Gia</h2>
+				    <p>Tham gia tình nguyện cho Hanoi Pet Adoption, bạn đang góp phần thay đổi số phận của những bé chó mèo bị bỏ rơi hay bạo hành. Bên cạnh đó, bạn còn có cơ hội tìm hiểu thêm...
+				    </p>
+				</div>
+			    <div class="btn_3">
+					<a href="volumteerpage.html"><label>THAM GIA NGAY</label></a>
+				</div>
+			</div>
+		</div>
+		<div class="content_4">
+			<h1>BÉ NGOAN TRONG TUẦN</h1>
+			<div class="box_content_4_pet">
+				<div class="content_4_pet" id="content_4_pet"></div>
+				<div class="btn_4">
+					<a href="adoptpage.html"><label>NHẬN NUÔI</label></a>
+				</div>
+			</div>
+		</div>
+		<div class="content_5">
+			<div class="content_5_slogan">
+				<h2>BẠN ĐÃ SẴN SÀNG GIÚP ĐỠ</h2>
+			</div>
+			<div class="content_5_btn">
+				<div class="btn_5">
+					<a href="donatepage.html"><label>ỦNG HỘ NGAY</label></a>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer_information">
+			<div class="footer_information_col" id="footer_information_col_1">
+				<div class="footer_logo">
+					<img src="image/logo.png" id="footer_logo" alt="">
+				</div>
+				<div class="footer_name_brand">
+					<h1>ADOPTION</h1>
+				</div>
+				<div class="footer_icon">
+					<i class="fab fa-facebook-square"><a href="#"></a></i>
+					<i class="fab fa-youtube"><a href="#"></a></i>
+					<i class="fab fa-instagram-square"><a href="#"></a></i>
+				</div>
+			</div>
+			<div class="footer_information_col" id="footer_information_col_2">
+				<h3>Về chúng tôi</h3>
+				<p>Nhóm trẻ tình nguyện viên Việt Nam và quốc tế, hoạt động vì tình yêu chó mèo.</p>
+				<h3>Thông tin liên hệ</h3>
+				<i class="fas fa-map-marker-alt"></i><span>Đà Nẵng - Việt Nam</span><br>
+				<i class="far fa-envelope"></i><span><a href="#">danangaoption.com</a></span><br>
+				<i class="fas fa-phone"></i><span><a href="#">(+84)70 560 5264</a></span><br>
+			</div>
+			<div class="footer_information_col" id="footer_information_col_3">
+				<div class="box_fb_information">
+					<div class="fb_information">
+						<div class="fb_logo"><img src="image/info-4.jpg" id="fb_logo"></div>
+						<div class="fb_name">
+							<a href="#">ADOPTION-Nhận nuôi thú cưng</a><br>
+							<span>123,456 lượt thích</span>
+						</div>
+					</div>
+					<div class="fb_btn_action">
+						<div class="fb_btn_like">
+							<a href="#"><i class="fab fa-facebook-square"></i><span>Thí</i>ch Trang</span></a>
+						</div>
+						<div class="fb_btn_mess">
+							<a href="#"><i class="fab fa-facebook-messenger"></i><span>Gửi tin nhắn</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_coppyright">
+			<p>Copyright 2019 / Designed by ADOPTION</p>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+	</div>
+</body>
+</html>

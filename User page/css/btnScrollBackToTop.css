@@ -1,0 +1,30 @@
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 43px;
+    z-index: 99;
+    font-size: 30px;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    background-color: #ffc107;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px -5px #fff;
+}
+#myBtn:hover{
+    background-color: #007bff;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    transition: 0.1s;
+    transform: scale(1.2);
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}

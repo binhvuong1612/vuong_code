@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ADOPT PAGE</title>
+	<link rel="stylesheet" href="font-awsome/all.min.css">
+	<link rel="stylesheet" href="css/resetCSS.css">
+	<link rel="stylesheet" href="css/headerCSS.css">
+	<link rel="stylesheet" type="text/css" href="css/adoptpage.css">
+	<link rel="stylesheet" href="css/footerCSS.css">
+
+	<link rel="stylesheet" type="text/css" href="css/btnScrollBackToTop.css">
+	<script type="text/javascript" src="js/btnScrollBackToTop.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    
+    <script type="text/javascript" src="js/adoptpage.js"></script>
+</head>
+<body onload="adoptpage()">
+	<div class="header">
+		<div class="header_information" id="header_information">
+			<div class="left_header">
+				<i class="fas fa-map-marker-alt"></i><span>Đà Nẵng - Việt Nam</span>
+				<i class="far fa-envelope"></i><span><a href="#">danangaoption.com</a></span>
+				<i class="fas fa-phone"></i><span><a href="#">(+84)70 560 5264</a></span>
+			</div>
+			<div class="right_header">
+				<span><i class="fas fa-search"></i></span>
+				<button onclick="signout()" id="btn_signout" class="btn-second">Sign Out</button>
+			</div>
+			
+		</div>
+		<div class="header_menu" id="header_menu">
+			<div class="header_icon">
+					<i class="fab fa-facebook-square"><a href="#"></a></i><br>
+					<i class="fab fa-youtube"><a href="#"></a></i><br>
+					<i class="fab fa-instagram-square"><a href="#"></a></i><br>
+			</div>
+			<div class="left_menu">
+				<div class="header_logo">
+					<img src="image/logo.png" id="header_logo" alt="">
+				</div>
+				<div class="header_name_brand">
+					<h1>ADOPTION</h1>
+				</div>
+			</div>
+			<div class="right_menu">
+				<nav>
+					<ul>
+						<li><i class="fas fa-paw"></i><a href="homepgae.html">HOME</a></li>
+						<li><i class="fas fa-paw"></i><a href="adoptpage.html">ADOPT</a></li>
+						<li><i class="fas fa-paw"></i><a href="donatepage.html">DONATE</a></li>
+						<li><i class="fas fa-paw"></i><a href="volumteerpage.html">VOLUMTEER</a></li>
+						<li><i class="fas fa-paw"></i><a href="newspage.html">NEWS</a></li>
+						<li><i class="fas fa-paw"></i><a href="blogpage.html">BLOG</a></li>
+						<li><i class="fas fa-paw"></i><a href="contactpage.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="body" id="body">
+		<div class="content_1">
+			<h1>ADOPT</h1>
+			<div class="btn_1">
+				<a href="homepgae.html">Home Page  ></a><span>Adopt</span>
+			</div>
+		</div>
+		<div class="content_2">
+			<div class="box_content_2">
+				<div class="content_2_col1">
+					<h1>Quy Trình Nhận Nuôi</h1>
+			          <p>Trước khi quyết định nhận nuôi bé chó hay mèo nào, bạn hãy tự hỏi bản thân rằng mình đã sẵn sàng để chịu trách nhiệm cả đời cho bé chưa, cả về tài chính, nơi ở cũng như tinh thần. Việc nhận nuôi cần được sự đồng thuận lớn từ bản thân bạn cũng như gia đình và những người liên quan. Xin cân nhắc kỹ trước khi liên hệ với HPA về việc nhận nuôi.
+			          </p>
+			          <p>Bạn đã sẵn sàng? Hãy thực hiện các bước sau đây nhé:</p>
+			          <p>
+			          	<span>1️⃣ Tìm hiểu về thú cưng bạn muốn nhận nuôi trên trang web của HPA.</span><br>
+			            <span>2️⃣ Liên hệ với Tình nguyện viên phụ trách bé để tìm hiểu thêm về bé.</span><br>
+			            <span>3️⃣ Tham gia phỏng vấn nhận nuôi.</span><br>
+			            <span>4️⃣ Chuẩn bị cơ sở vật chất, ký giấy tờ nhận nuôi và đóng tiền vía để đón bé về.</span><br>
+			            <span>5️⃣ Thường xuyên cập nhật về tình hình của bé, đặc biệt là khi có sự cố để được tư vấn kịp thời.</span><br>
+			          </p>
+			          <p>❗ Lưu ý:</p>
+			          <p>
+						 - Chỉ inbox 01 Tình nguyện viên phỏng vấn, KHÔNG NÊN inbox tất cả danh sách. Trường hợp TNV chưa phản hồi lại trong vòng 1 ngày, vui lòng inbox cho Page.
+						 - Phần phỏng vấn có thể có nhiều câu hỏi mang tính chất riêng tư, vì vậy mong bạn hãy kiên nhẫn nhé!
+						 - Tiền vía mỗi bé sẽ khác nhau tùy thuộc vào tình trạng của bé khi cứu cũng như các dịch vụ y tế (tiêm phòng, triệt sản) đã thực hiện.
+						 - Tiền vía dùng để trả các khoản chi về y tế trước đây cho bé, cũng như để hỗ trợ chi phí chăm sóc, nuôi dưỡng các bé khác tại nhà chung.
+						 - Trường hợp không nuôi được tiếp cần trả lại cho Nhóm, không tự ý đem cho người khác.
+					  </p>
+					  <p>
+					  	Nếu bạn chỉ có thể chăm sóc tạm thời (foster), tham khảo thông tin tại mục Tình nguyện.
+					  </p>	
+					  <p>🐈 Tìm hiểu thêm về chương trình Nhận nuôi Ảo ở banner cuối trang này.</p>
+				</div>
+				<div class="content_2_col2">
+					<div class="box_content_2_col_2">
+						<h3>Điều Kiện Nhận Nuôi</h3>
+						<i class="fas fa-paw"></i><span>Tài chính tự chủ và ổn định.</span><br>
+						<i class="fas fa-paw"></i><span>Chỗ ở cố định, ưu tiên tại Hà Nội.</span><br>
+						<i class="fas fa-paw"></i><span>Cam kết tiêm phòng và triệt sản.</span><br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content_3">
+			<div class="content_3_slogan">
+				<h3>Tất Cả Các Ca Cứu Hộ</h3>
+				<h6>Tìm hiểu về tất cả các ca cứu hộ, đang nằm viện, ở nhà fos, đã mất, đã được nhận nuôi...</h6>
+			</div>
+			<div class="content_3_btn">
+				<div class="btn_3">
+					<a href="#"><label>XEM THÊM</label></a>
+				</div>
+			</div>	
+		</div>
+		<div class="content_4">
+			<h1>TÌM KIẾM BÉ NGOAN</h1>
+			<div class="box_content_4_find">
+				<div class="content_4_form_find" id="content_4_form_find"></div>
+				<div class="content_4_find" id="content_4_find"></div>
+				<div class="btn_4">
+					<a href="#"><label>XEM THÊM</label></a>
+				</div>
+			</div>
+		</div>
+		<div class="content_5">
+			<div class="content_5_slogan">
+				<h3>Bạn Chưa Đủ Điều Kiện Mang Boss Về Nhà? Tham Gia Chương Trình Nhận Nuôi Ảo Nhé.</h3>
+			</div>
+			<div class="content_5_btn">
+				<div class="btn_5">
+					<a href="#"><label>XEM THÊM</label></a>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer_information">
+			<div class="footer_information_col" id="footer_information_col_1">
+				<div class="footer_logo">
+					<img src="image/logo.png" id="footer_logo" alt="">
+				</div>
+				<div class="footer_name_brand">
+					<h1>ADOPTION</h1>
+				</div>
+				<div class="footer_icon">
+					<i class="fab fa-facebook-square"><a href="#"></a></i>
+					<i class="fab fa-youtube"><a href="#"></a></i>
+					<i class="fab fa-instagram-square"><a href="#"></a></i>
+				</div>
+			</div>
+			<div class="footer_information_col" id="footer_information_col_2">
+				<h3>Về chúng tôi</h3>
+				<p>Nhóm trẻ tình nguyện viên Việt Nam và quốc tế, hoạt động vì tình yêu chó mèo.</p>
+				<h3>Thông tin liên hệ</h3>
+				<i class="fas fa-map-marker-alt"></i><span>Đà Nẵng - Việt Nam</span><br>
+				<i class="far fa-envelope"></i><span><a href="#">danangaoption.com</a></span><br>
+				<i class="fas fa-phone"></i><span><a href="#">(+84)70 560 5264</a></span><br>
+			</div>
+			<div class="footer_information_col" id="footer_information_col_3">
+				<div class="box_fb_information">
+					<div class="fb_information">
+						<div class="fb_logo"><img src="image/info-4.jpg" id="fb_logo"></div>
+						<div class="fb_name">
+							<a href="#">ADOPTION-Nhận nuôi thú cưng</a><br>
+							<span>123,456 lượt thích</span>
+						</div>
+					</div>
+					<div class="fb_btn_action">
+						<div class="fb_btn_like">
+							<a href="#"><i class="fab fa-facebook-square"></i><span>Thí</i>ch Trang</span></a>
+						</div>
+						<div class="fb_btn_mess">
+							<a href="#"><i class="fab fa-facebook-messenger"></i><span>Gửi tin nhắn</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_coppyright">
+			<p>Copyright 2019 / Designed by ADOPTION</p>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+	</div>
+</body>
+</html>

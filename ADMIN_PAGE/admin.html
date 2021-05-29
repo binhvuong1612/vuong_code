@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" type="text/css" href="css/boxFind.css">
+    <link rel="stylesheet" href="css/adminpage.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/taskImage.css">
+    <link rel="stylesheet" href="css/taskTitle.css">
+    <link rel="stylesheet" href="css/taskData.css">
+    <link rel="stylesheet" href="css/taskTool.css">
+    <link rel="stylesheet" href="css/taskcomment.css">
+    <!-- <link rel="stylesheet" href="admin.css" /> -->
+    <!-- <link rel="stylesheet" href="servicesPet.css" /> -->
+
+
+    <title>CSS GRID DASHBOARD</title>
+    
+
+  </head>
+  <body id="body" onload="count_user_and_pet()" >
+    <div class="container" >
+      <nav class="navbar">
+        <div class="nav_icon" onclick="toggleSidebar()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="navbar__left">
+          <a class="active_link" href="#">Admin</a>
+          <a href="#" >Calender</a>
+          
+        </div>
+        <div class="navbar__right">
+          <a href="#">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="far fa-clock" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <img width="30" src="assets/avatar.svg" alt="" />
+            <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+          </a>
+        </div>
+      </nav>
+      <!-- navbar top -->
+
+      <main>
+        <div class="main__container">
+          <!-- MAIN TITLE STARTS HERE -->
+
+          <div class="main__title">
+            <img src="assets/hello.svg" alt="" />
+            <div class="main__greeting">
+              <h1>Hello</h1>
+              <p>Welcome to your admin dashboard</p>
+            </div>
+          </div>
+
+          <!-- MAIN TITLE ENDS HERE -->
+
+          <!-- MAIN CARDS STARTS HERE -->
+          <div class="main__cards">
+            <div class="card">
+            
+              <i class="fas fa-user fa-2x text-lightblue" aria-hidden="true"></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Number of User</p>
+                <span class="font-bold text-title" id="number_user">--</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i class="fas fa-calendar fa-2x text-red" aria-hidden="true"></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Times of Watching</p>
+                <span class="font-bold text-title">24607</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i class="fas fa-dog fa-2x text-yellow" aria-hidden="true"></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Number of Pet</p>
+                <span class="font-bold text-title" id="number_pet">--</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i
+                class="fas fa-thumbs-up fa-2x text-green"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Number of Likes</p>
+                <span class="font-bold text-title">6405</span>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN CARDS ENDS HERE -->
+
+          <!-- CHARTS STARTS HERE -->
+          <div id="box">
+            
+                  <button onclick="add_user_form()" class="btn_add" id="btn_add_user"><i class="fas fa-plus-circle">  </i><label>Add User</label>
+                  </button>
+                  <button onclick="add_donate_form()" class="btn_add" id="btn_add_donate"><i class="fas fa-plus-circle">  </i><label>Add Donate</label>
+                  </button>
+                  <button onclick="add_pet_form()" class="btn_add" id="btn_add_pet"><i class="fas fa-plus-circle">  </i><label>Add Pet</label>
+                  </button>
+                  <button onclick="add_video_form()" class="btn_add" id="btn_add_video"><i class="fas fa-plus-circle">  </i><label>Add Video</label>
+                  </button>
+                  <button onclick="add_news_form()" class="btn_add" id="btn_add_news"><i class="fas fa-plus-circle">  </i><label>Add News</label>
+                  </button>
+                  <button onclick="add_blog_form()" class="btn_add" id="btn_add_blog"><i class="fas fa-plus-circle">  </i><label>Add Blog</label>
+                  </button>
+          </div>
+          <div id="show_data">
+                <div id="box-find-user" class="box-find-user">
+                   <input type="text" class="name_user_find" id="name_user_find" placeholder="Search User..."/>
+                   <select class="select_type_user_find" id="select_type_user_find" >
+                        <option value="Admin">Admin</option>
+                        <option value="Volumteers">Volumteers</option>
+                        <option value="Adopters">Adopters</option>
+                        <option value="Employees">Employees</option>
+                    </select>
+                    
+                   <a class="btn_find_user" id="btn_find_user" onclick="get_user()">
+                    <i class="fas fa-search"></i>
+                   </a>
+                </div>
+
+                <div id="box-find-donate" class="box-find-user">
+                   <input type="text" class="name_user_find" id="name_donate_find" placeholder="Search Donate..."/>
+                   <select class="select_type_user_find" id="select_type_find" >
+                        <option value="Donate">Donate</option>
+                    </select>
+                   <a class="btn_find_user" id="btn_find_donate" onclick="get_donate()">
+                    <i class="fas fa-search"></i>
+                   </a>
+                </div>
+
+                <div id="box-find-pet" class="box-find-user">
+                   <input type="text" class="name_user_find" id="name_pet_find" placeholder="Search Pet..."/>
+                   <select class="select_type_user_find" id="select_type_find" >
+                        <option value="Pet">Pet</option>  
+                    </select>
+                   <a class="btn_find_user" id="btn_find_pet" onclick="get_pet()">
+                    <i class="fas fa-search"></i>
+                   </a>
+                </div>
+
+                <div id="box-find-video" class="box-find-user">
+                   <input type="text" class="name_user_find" id="name_video_find" placeholder="Search Video..."/>
+                   <select class="select_type_user_find" id="select_type_find" >
+                        <option value="Video">Video</option>  
+                    </select>
+                   <a class="btn_find_user" id="btn_find_video" onclick="get_video()">
+                    <i class="fas fa-search"></i>
+                   </a>
+                </div>
+
+                <div id="box-find-news" class="box-find-user">
+                   <input type="text" class="name_user_find" id="name_news_find" placeholder="Search News..."/>
+                   <select class="select_type_user_find" id="select_type_find" >
+                        <option value="News">News</option>  
+                    </select>
+                   <a class="btn_find_user" id="btn_find_news" onclick="get_news()">
+                    <i class="fas fa-search"></i>
+                   </a>
+                </div>
+
+                <div id="box-find-blog" class="box-find-user">
+                   <input type="text" class="name_user_find" id="name_blog_find" placeholder="Search Blog..."/>
+                   <select class="select_type_user_find" id="select_type_find" >
+                        <option value="Blog">Post</option>  
+                    </select>
+                   <a class="btn_find_user" id="btn_find_blog" onclick="get_blog()">
+                    <i class="fas fa-search"></i>
+                   </a>
+                </div>
+
+                <div id="box-add-user" class="task_container">
+                  <div class="task_img">
+                        <img id="avatar_view" src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg">
+                  </div>
+                  <div class="title_data">
+                      <p>Email : </p>
+                      <p>User Name : </p>
+                      <p>password : </p>
+                      <p>Birthday : </p>
+                      <p>Phone : </p>
+                      <p>Address : </p>
+                  </div>
+                  <div class="task_data">
+                    <input type="email" id="email" ><br>
+                    <input type="name" id="username" ><br>
+                    <input type="password" id="password" ><br>
+                    <input type="date" id="birthday" ><br>
+                    <input type="text" id="phone" ><br>
+                    <input type="text" id="address" ><br>
+                  </div>
+                  <div class="task_btn">
+                    <form>
+                      Choose type User:
+                      <select id="mySelect">
+                        <option value="Admin">Admin</option>
+                        <option value="Volumteers">Volumteers</option>
+                        <option value="Adopters">Adopters</option>
+                        <option value="Employees">Employees</option>
+                      </select>
+                    </form>
+                    <div class="type_user_box">
+                      <div><input type="checkbox" id="check_user" class="check_box" value="Admin"></div>
+                      <div><label>I am sure of this decision!</label><br></div>
+                    </div>
+                    <div class="btn-box">
+                      <button onclick="add_user()" id="signup-btn" class="signup-btn">Sign Up</button>
+
+                      <button onclick="close_add_user_form()" id="cancel-btn" class="cancel-btn">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="box-add-donate" class="task_container">
+                  <div class="task_img">
+                        <img id="avatar_view" src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg">
+                  </div>
+                  <div class="title_data">
+                      <p>Email : </p>
+                      <p>User Name : </p>
+                      <p>Money : </p>
+                      <p>Day : </p>    
+                  </div>
+                  <div class="task_data">
+                    <input type="email" id="email_donate" ><br>
+                    <input type="name" id="username_donate"><br>
+                    <input type="number" id="money_donate"><br>
+                    <input type="date" id="day_donate"><br>
+                    
+                  </div>
+                  <div class="task_btn">
+                    <div class="type_user_box">
+                      <div><input type="checkbox" id="check_donate" class="check_box"></div>
+                      <div><label>I am sure of this decision!</label><br></div>
+                    </div>
+                    <div class="btn-box">
+                      <button onclick="add_donate()" id="donate-btn" class="signup-btn">Donate</button>
+                      <button onclick="close_add_donate_form()" id="cancel-btn" class="cancel-btn">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="box-add-pet" class="task_container">
+                      <div class="task_img">
+                        <img id="image_view" src="https://previews.123rf.com/images/jemastock/jemastock1610/jemastock161006992/65395867-dog-silhouette-icon-pet-animal-domestic-and-care-theme-isolated-design-vector-illustration.jpg">
+                        <input type="file" onchange="chooseFile(event)">
+                      </div>
+                      <div class="title_data">
+                        <p>Pet Name : </p>
+                        <p>Age : </p>
+                        <p>Sex : </p>
+                        <p>Title : </p>
+                        <p>Describe : </p>
+                      </div>
+                      <div class="task_data">
+                        <input type="text" id="pet_name" ><br>
+                        <input type="number" id="pet_age" ><br>
+                        <form>
+                          <select id="select_sex">
+                            <option value="male">Male Dog</option>
+                            <option value="female">Female Dog</option>
+                          </select>
+                        </form>
+                        <input type="text" id="pet_title" ><br>
+                        <textarea id="pet_describe" rows="3"></textarea>
+                      </div>
+                      <div class="task_btn">
+                        <div class="type_user_box">
+                          <div><input type="checkbox" id="check_pet" class="check_box"></div>
+                          <div><label>I am sure of this decision!</label><br></div>
+                        </div>
+                        <div class="btn-box">
+                          <button onclick="add_pet()" id="pet-btn" class="signup-btn">Add Pet</button>
+                          <button onclick="close_add_pet_form()" id="cancel-btn" class="cancel-btn">Cancel</button>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div id="box-add-video" class="task_container">
+                      <div class="task_img">
+                        <img id="image_view" src="https://previews.123rf.com/images/jemastock/jemastock1610/jemastock161006992/65395867-dog-silhouette-icon-pet-animal-domestic-and-care-theme-isolated-design-vector-illustration.jpg">
+                        <input type="file" onchange="chooseVideo(event)">
+                      </div>
+                      <div class="title_data">
+                        <p>Name : </p>
+                        <p>Title : </p>
+                        <p>Day : </p>
+                        <p>Describe : </p>
+                      </div>
+                      <div class="task_data">
+                        <input type="text" id="video_name" ><br>
+                        <input type="text" id="video_title" ><br>
+                        <input type="date" id="video_day" ><br>
+                        <textarea id="video_describe" rows="3"></textarea>
+                      </div>
+                      <div class="task_btn">
+                        <div class="type_user_box">
+                          <div><input type="checkbox" id="check_video" class="check_box"></div>
+                          <div><label>I am sure of this decision!</label><br></div>
+                        </div>
+                        <div class="btn-box">
+                          <button onclick="add_video()" id="pet-btn" class="signup-btn">Add Video</button>
+                          <button onclick="close_add_video_form()" id="cancel-btn" class="cancel-btn">Cancel</button>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div id="box-add-news" class="task_container">
+                      <div class="task_img">
+                        <img id="image_view" src="https://previews.123rf.com/images/jemastock/jemastock1610/jemastock161006992/65395867-dog-silhouette-icon-pet-animal-domestic-and-care-theme-isolated-design-vector-illustration.jpg">
+                        <input type="file" onchange="chooseNews(event)">
+                      </div>
+                      <div class="title_data">
+                        <p>Name : </p>
+                        <p>Title : </p>
+                        <p>Day : </p>
+                        <p>Describe : </p>
+                      </div>
+                      <div class="task_data">
+                        <input type="text" id="news_name" ><br>
+                        <input type="text" id="news_title" ><br>
+                        <input type="date" id="news_day" ><br>
+                        <textarea id="news_describe" rows="3"></textarea>
+                      </div>
+                      <div class="task_btn">
+                        <div class="type_user_box">
+                          <div><input type="checkbox" id="check_news" class="check_box"></div>
+                          <div><label>I am sure of this decision!</label><br></div>
+                        </div>
+                        <div class="btn-box">
+                          <button onclick="add_news()" id="pet-btn" class="signup-btn">Add News</button>
+                          <button onclick="close_add_news_form()" id="cancel-btn" class="cancel-btn">Cancel</button>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div id="box-add-blog" class="task_container">
+                      <div class="task_img">
+                        <img id="image_view" src="https://previews.123rf.com/images/jemastock/jemastock1610/jemastock161006992/65395867-dog-silhouette-icon-pet-animal-domestic-and-care-theme-isolated-design-vector-illustration.jpg">
+                        <input type="file" onchange="chooseBlog(event)">
+                      </div>
+                      <div class="title_data">
+                        <p>Name Blog : </p>
+                        <p>Day : </p>
+                        <p>Bloger : </p>
+                        <p>Status : </p>
+                      </div>
+                      <div class="task_data">
+                        <input type="text" id="blog_name" ><br>
+                        <input type="date" id="blog_day" ><br>
+                        <input type="text" id="bloger" ><br>
+                        <textarea id="blog_status" rows="3"></textarea>
+                      </div>
+                      <div class="task_btn">
+                        <div class="type_user_box">
+                          <div><input type="checkbox" id="check_blog" class="check_box"></div>
+                          <div><label>I am sure of this decision!</label><br></div>
+                        </div>
+                        <div class="btn-box">
+                          <button onclick="add_blog()" id="pet-btn" class="signup-btn">Add Blog</button>
+                          <button onclick="close_add_blog_form()" id="cancel-btn" class="cancel-btn">Cancel</button>
+                        </div>
+                      </div>
+                  </div>
+                  
+          </div>
+          <div id="charts">
+            <div class="charts__left">
+              <div class="charts__left__title">
+                <div>
+                  <h1>Daily Reports</h1>
+                  <p>Da Nang, Viet Nam</p>
+                </div>
+                <i class="fas fa-usd" aria-hidden="true"></i>
+              </div>
+              <div id="apex"></div>
+            </div>
+
+            <div class="charts__right">
+              <div class="charts__right__title">
+                <div>
+                  <h1>Stats Reports</h1>
+                  <p>Da Nang, Viet Nam</p>
+                </div>
+                <i class="fas fa-usd" aria-hidden="true"></i>
+              </div>
+
+              <div class="charts__right__cards">
+                <div class="card1">
+                  <h1>Donates</h1>
+                  <label>$</label><label id="number_total_donate">--</label>
+                </div>
+
+                <div class="card2">
+                  <h1>Sales</h1>
+                  <p>$124,200</p>
+                </div>
+
+                <div class="card3">
+                  <h1>Users</h1>
+                  <p id="user_number">--</p>
+                </div>
+
+                <div class="card4">
+                  <h1>Orders</h1>
+                  <p>1881</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHARTS ENDS HERE -->
+        </div>
+      </main>
+
+      <div id="sidebar">
+        <div class="sidebar__title">
+          <div class="sidebar__img">
+            <img src="assets/logo1.jpg" alt="logo" style="height: 50px; width: 50px; border-radius: 100%; margin-right: 20px  " />
+            <h1>Admin Page</h1>
+          </div>
+          <i
+            onclick="closeSidebar()"
+            class="fas fa-times"
+            id="sidebarIcon"
+            aria-hidden="true"
+          ></i>
+        </div>
+
+        <div class="sidebar__menu">
+          <div class="sidebar__link active_menu_link">
+            <i class="fas fa-home"></i>
+            <a href="#">Dashboard</a>
+          </div>
+          <h2>USER MANAGEMENT</h2>
+          <div class="sidebar__link">
+            <i class="fas fa-user-secret" aria-hidden="true"></i>
+            <a href="#" onclick="list_admin()">Admin </a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-user-plus"></i>
+            <a href="#" onclick="list_volumteers()">Volunteers </a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-user-shield"></i>
+            <a href="#" onclick="list_adopters()">Adopters</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-user-nurse"></i>
+            <a href="#" onclick="list_employees()">Employee  </a>
+          </div>
+          <h2>SERVICE & PET</h2>
+          <div class="sidebar__link">
+            <i class="fas fa-hand-holding-heart"></i>
+            <a href="#" onclick="list_services()">Services</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-gift"></i>
+            <a href="#">Products</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-dog"></i>
+            <a href="#" onclick="list_pet()">Pet</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-blog"></i>
+            <a href="#" onclick="list_blog()">Blog</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-photo-video"></i>
+            <a href="#" onclick="list_video()">Video</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="far fa-newspaper"></i>
+            <a href="#" onclick="list_news()">News</a>
+          </div>
+          <h2>STATISTIC</h2>
+          <div class="sidebar__link">
+            <i class="fas fa-money-check-alt"></i>
+            <a href="#" onclick="list_donate()">Donate</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fas fa-coins"></i>
+            <a href="#" onclick="total_donate()">Revenue</a>
+          </div>
+          <div class="sidebar__logout">
+            <i class="fas fa-power-off"></i>
+            <a href="#" onclick="signout()">Log out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<!--     <script src="admin.js"></script> -->
+    <script type="text/javascript" src="js/user.js"></script>
+    <script type="text/javascript" src="js/donate.js"></script>
+    <!-- <script type="text/javascript" src="js/service.js"></script> -->
+    <script type="text/javascript" src="js/pet.js"></script>
+    <script type="text/javascript" src="js/video.js"></script>
+    <script type="text/javascript" src="js/news.js"></script>
+    <script type="text/javascript" src="js/blog.js"></script>
+</html>
